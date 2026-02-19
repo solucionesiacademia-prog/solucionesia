@@ -1,6 +1,9 @@
 import { Instagram, Mail } from "lucide-react";
+import { useI18n } from "@/i18n/I18nContext";
 
 const Footer = () => {
+  const { t } = useI18n();
+
   return (
     <footer className="py-12 bg-foreground">
       <div className="container mx-auto px-4 lg:px-8">
@@ -40,9 +43,14 @@ const Footer = () => {
             </a>
           </div>
 
-          <p className="text-primary-foreground/40 text-sm">
-            © 2026 Solutions IA
-          </p>
+          <div className="text-center sm:text-right">
+            <p className="text-primary-foreground/40 text-xs mb-1">
+              {t.footer.priceNote}
+            </p>
+            <p className="text-primary-foreground/40 text-sm">
+              © 2026 Solutions IA
+            </p>
+          </div>
         </div>
       </div>
     </footer>
