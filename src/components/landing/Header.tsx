@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useI18n } from "@/i18n/I18nContext";
@@ -131,15 +132,16 @@ const Header = () => {
           className="md:hidden bg-card/95 backdrop-blur-md border-t border-border px-4 pb-4"
         >
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
+            <Link
+              key={item.to}
+              to={item.to}
               className="block py-3 text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
               onClick={() => setMenuOpen(false)}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
+
           <a href="https://wa.me/5493794735500" target="_blank" rel="noopener noreferrer">
             <Button variant="hero" size="sm" className="w-full mt-2 gap-2">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="hsl(142, 70%, 45%)">
