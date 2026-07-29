@@ -20,10 +20,9 @@ const Header = () => {
   }, []);
 
   const navItems = [
-    { label: t.nav.inicio, href: "#inicio" },
-    { label: t.nav.servicios, href: "#servicios" },
-    { label: t.nav.portfolio, href: "#portfolio" },
-    { label: t.nav.contacto, href: "#contacto" },
+    { label: t.nav.inicio, to: "/" },
+    { label: t.nav.servicios, to: "/servicios" },
+    { label: t.nav.portfolio, to: "/portfolio" },
   ];
 
   return (
@@ -33,21 +32,22 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4 lg:px-8">
-        <a href="#inicio" className="text-xl font-extrabold tracking-tight text-primary">
+        <Link to="/" className="text-xl font-extrabold tracking-tight text-primary">
           Solutions IA
-        </a>
+        </Link>
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
+            <Link
+              key={item.to}
+              to={item.to}
               className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
+
 
           {/* Region selector */}
           <div className="relative">
