@@ -305,7 +305,12 @@ export type Translations = {
     heading1: string;
     headingHighlight: string;
     viewProject: string;
+    viewAll: string;
+    pageHeading: string;
+    pageIntro: string;
+    backHome: string;
     projects: readonly { title: string; description: string }[];
+
   };
   contact: {
     heading1: string;
