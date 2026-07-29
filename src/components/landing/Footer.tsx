@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-5">
             <a
-              href="https://instagram.com/soluciones.ia"
+              href="https://instagram.com/solutions.ia"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
