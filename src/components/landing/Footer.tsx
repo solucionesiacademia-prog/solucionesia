@@ -14,7 +14,7 @@ const Footer = () => {
 
           <div className="flex items-center gap-5">
             <a
-              href="https://instagram.com"
+              href="https://instagram.com/soluciones.ia"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
@@ -35,7 +35,7 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              href="mailto:contacto@solutionsia.com"
+              href="mailto:solucionesiacademia@gmail.com"
               className="text-primary-foreground/60 hover:text-primary-foreground transition-colors"
               aria-label="Email"
             >
@@ -48,7 +48,7 @@ const Footer = () => {
               {t.footer.priceNote}
             </p>
             <p className="text-primary-foreground/40 text-sm">
-              © 2026 Solutions IA
+              © 2023 Solutions IA
             </p>
           </div>
         </div>
