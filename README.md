@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# Digital Brilliance Hub
 
-## Project info
+Crea desde cero una landing page premium minimal tech para agencia digital, estilo Framer y Readymag: elegante, limpio, profesional con interactividad sutil. Paleta: azul dominante #0077B6 (principal), degradado a #60A5FA (acentos/hover), fondos blanco #FFFFFF o gris claro #F8FAFC (70-80% página), textos #0F172A, acento teal/cyan sutil #0EA5E9 para CTAs y highlights (nada monótono, mucho contraste y aire).
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Tipografía: sans-serif clean bold (Inter o Manrope), headings grandes refinados. Animaciones: scroll reveal fade-in/slide-up suave (Framer Motion style), hover glow/lift en cards y botones, micro-interacciones (mouse-follow sutil en hero waves si posible). Responsive 100% móvil primero.
 
-## How can I edit this code?
+Estructura una página scroll:
 
-There are several ways of editing your application.
+1. Header sticky minimal: "Solutions IA". Menú simple: Inicio · Servicios · Portfolio · Contacto. CTA WhatsApp azul #0077B6 con ícono verde pequeño, hover teal.
 
-**Use Lovable**
+2. Hero grande impactante: fondo gradient sutil azul claro a blanco, título bold grande: "¿Querés una presencia digital que realmente impulse tu negocio?". Subtítulo: "Desarrollamos landings, tiendas virtuales y herramientas a medida que generan ventas reales para emprendedores argentinos serios.". Visual: abstract geométrico waves/nodos teal-cyan flotantes con scroll parallax sutil + mockup limpio de dashboard (estilo SocioGym). CTA principal: botón azul "Hablemos por WhatsApp" con hover glow teal.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+3. Sección valor educativa profunda: título "Por qué una web propia es tu mejor inversión hoy". 4 bloques asimétricos con párrafos sustanciosos (3-5 líneas cada uno, tono conversacional pro argentino: "Imaginá que...", "¿Sabías que...?"), icono abstracto sutil teal al lado, scroll reveal. Contenido:
 
-Changes made via Lovable will be committed automatically to this repo.
+   - Bloque 1: Control total vs redes prestadas (Instagram/algoritmos).
 
-**Use your preferred IDE**
+   - Bloque 2: Profesionalismo y confianza instantánea.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+   - Bloque 3: Ventas y leads 24/7 automáticos.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+   - Bloque 4: Escalabilidad sin límites ni costos ocultos.
 
-Follow these steps:
+4. Servicios teaser: 3 tarjetas minimal (borde sutil gris, hover lift/glow teal): 
+
+   - Landings: "Ideal para empezar rápido y convertir visitas en clientes".
+
+   - Tiendas Virtuales: "Vendé online con carrito seguro y pagos integrados".
+
+   - Herramientas/Apps: "Automatizá tu día a día con dashboards y gamificación".
+
+   Botón "Ver paquetes y precios" → /servicios.
+
+5. Portfolio: grid elegante 2x2 responsive con screenshots reales high-res de:
+
+   - Grosso[](https://take.app/es/grosso)
+
+   - SocioGym Pro[](https://sociogym.lovable.app)
+
+   - MarketingMaster[](https://marketing-master-game.lovable.app)
+
+   - Ventix[](https://ventix.lovable.app)
+
+   Cada card: título, descripción corta pro, botón "Ver proyecto" abre link. Hover zoom sutil + glow teal.
+
+6. Contacto final: título "¿Tenés una idea? Hablemos ya". Form clean (nombre, email, mensaje) + botón azul "Enviar". Alternativa grande: botón WhatsApp verde "Hablame ahora" con número +54 9 379 473-5500.
+
+7. Footer minimal: logo azul, íconos IG/WhatsApp/Email, copyright © 2026 Solutions IA.
+
+Hazlo rápido, optimizado, SEO básico (title: "Solutions IA | Desarrollo Web y Apps Profesionales"), sin elementos amateur: no cartoon, no emojis, no vectores básicos, solo visuals tech abstractos limpios y screenshots reales.
+
+This project was built with [Lovable](https://lovable.dev).
+
+**Live app**: https://solucionesia.lovable.app
+
+## Build with Lovable
+
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/944bc7c6-8024-4a1f-8837-3b7e9145ac7a).
+
+- **Ship faster**: describe what you want to build and Lovable handles the code.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+
+## Development
+
+Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
+git clone <this-repository-url>
+cd <repository-name>
 npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
