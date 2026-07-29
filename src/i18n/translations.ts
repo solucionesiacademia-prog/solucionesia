@@ -84,13 +84,22 @@ export const translations = {
       heading1: "Proyectos que ",
       headingHighlight: "hablan por sí solos",
       viewProject: "Ver proyecto →",
+      viewAll: "Ver todos los proyectos",
+      pageHeading: "Nuestro portfolio completo",
+      pageIntro: "Cada proyecto resuelve un problema real de un negocio real. Mirá lo que podemos hacer con el tuyo.",
+      backHome: "← Volver al inicio",
       projects: [
         { title: "Grosso", description: "Tienda online de moda urbana con catálogo dinámico y carrito integrado." },
         { title: "SocioGym Pro", description: "Plataforma SaaS de gestión integral para gimnasios y centros deportivos." },
         { title: "MarketingMaster", description: "App educativa gamificada de marketing digital con módulos y certificados." },
         { title: "Ventix", description: "Herramienta de ventas por WhatsApp con leads automáticos y seguimiento." },
+        { title: "FutMatch", description: "Plataforma para organizar partidos de fútbol, armar equipos y gestionar reservas." },
+        { title: "FitCoach Hub", description: "Panel para entrenadores personales con rutinas, seguimiento y clientes." },
+        { title: "Picca", description: "Sitio de pedidos online con menú digital y checkout directo por WhatsApp." },
+        { title: "Invita Digital", description: "Invitaciones digitales interactivas con confirmación de asistencia en tiempo real." },
       ],
     },
+
     contact: {
       heading1: "¿Tenés una idea? ",
       headingHighlight: "Hablemos ya",
@@ -200,13 +209,22 @@ export const translations = {
       heading1: "Projetos que ",
       headingHighlight: "falam por si mesmos",
       viewProject: "Ver projeto →",
+      viewAll: "Ver todos os projetos",
+      pageHeading: "Nosso portfólio completo",
+      pageIntro: "Cada projeto resolve um problema real de um negócio real. Veja o que podemos fazer com o seu.",
+      backHome: "← Voltar ao início",
       projects: [
         { title: "Grosso", description: "Loja online de moda urbana com catálogo dinâmico e carrinho integrado." },
         { title: "SocioGym Pro", description: "Plataforma SaaS de gestão integral para academias e centros esportivos." },
         { title: "MarketingMaster", description: "App educativa gamificada de marketing digital com módulos e certificados." },
         { title: "Ventix", description: "Ferramenta de vendas por WhatsApp com leads automáticos e acompanhamento." },
+        { title: "FutMatch", description: "Plataforma para organizar partidas de futebol, montar times e gerenciar reservas." },
+        { title: "FitCoach Hub", description: "Painel para personal trainers com treinos, acompanhamento e clientes." },
+        { title: "Picca", description: "Site de pedidos online com cardápio digital e checkout direto pelo WhatsApp." },
+        { title: "Invita Digital", description: "Convites digitais interativos com confirmação de presença em tempo real." },
       ],
     },
+
     contact: {
       heading1: "Tem uma ideia? ",
       headingHighlight: "Vamos conversar",
@@ -287,7 +305,12 @@ export type Translations = {
     heading1: string;
     headingHighlight: string;
     viewProject: string;
+    viewAll: string;
+    pageHeading: string;
+    pageIntro: string;
+    backHome: string;
     projects: readonly { title: string; description: string }[];
+
   };
   contact: {
     heading1: string;
