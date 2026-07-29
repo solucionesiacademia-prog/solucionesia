@@ -1,17 +1,9 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useI18n } from "@/i18n/I18nContext";
-import portfolioGrosso from "@/assets/portfolio-grosso.png";
-import portfolioSociogym from "@/assets/portfolio-sociogym.png";
-import portfolioMarketing from "@/assets/portfolio-marketing.png";
-import portfolioVentix from "@/assets/portfolio-ventix.png";
-
-const images = [portfolioGrosso, portfolioSociogym, portfolioMarketing, portfolioVentix];
-const urls = [
-  "https://take.app/es/grosso",
-  "https://sociogym.lovable.app",
-  "https://marketing-master-game.lovable.app",
-  "https://ventix.lovable.app",
-];
+import { Button } from "@/components/ui/button";
+import ProjectCard from "@/components/landing/ProjectCard";
+import { projectMeta } from "@/data/projects";
 
 const Portfolio = () => {
   const { t } = useI18n();
@@ -31,36 +23,32 @@ const Portfolio = () => {
         </motion.h2>
 
         <div className="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-          {t.portfolio.projects.map((project, i) => (
-            <motion.a
+          {t.portfolio.projects.slice(0, 4).map((project, i) => (
+            <ProjectCard
               key={i}
-              href={urls[i]}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="group bg-card rounded-2xl border border-border overflow-hidden card-hover"
-            >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={images[i]}
-                  alt={`Screenshot de ${project.title}`}
-                  className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-foreground mb-1">{project.title}</h3>
-                <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-                <span className="text-primary font-semibold text-sm group-hover:underline">
-                  {t.portfolio.viewProject}
-                </span>
-              </div>
-            </motion.a>
+              index={i}
+              title={project.title}
+              description={project.description}
+              image={projectMeta[i].image}
+              url={projectMeta[i].url}
+              cta={t.portfolio.viewProject}
+            />
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mt-12"
+        >
+          <Link to="/portfolio">
+            <Button variant="hero" size="lg" className="rounded-xl h-12 px-8">
+              {t.portfolio.viewAll}
+            </Button>
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
