@@ -21,5 +21,5 @@ export const projectMeta: ProjectMeta[] = [
   { image: portfolioFutmatch, url: "https://futmatch.lovable.app" },
   { image: portfolioFitcoachub, url: "https://fitcoachub.lovable.app" },
   { image: portfolioPicca, url: "https://picca.lovable.app" },
-  { image: portfolioInvitadigital, url: "https://invitadigital.lovable.app" },
+  { image: portfolioInvitadigital, url: "https://invitadodigital.netlify.app" },
 ];
