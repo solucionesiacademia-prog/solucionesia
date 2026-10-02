@@ -64,7 +64,7 @@ const Portfolio = () => {
         </motion.h2>
 
         {/* Stage */}
-        <div className="relative h-[230px] sm:h-[340px] lg:h-[420px] max-w-5xl mx-auto [perspective:1200px]">
+        <div className="relative h-[190px] sm:h-[340px] lg:h-[420px] max-w-5xl mx-auto [perspective:1200px]">
           {featuredProjects.map((idx, i) => {
             let offset = i - active;
             if (offset > total / 2) offset -= total;
