@@ -55,7 +55,7 @@ export const translations = {
       blocks: [
         {
           title: "Control total vs redes prestadas",
-          text: "Imaginá que mañana Instagram cambia el algoritmo y tus clientes dejan de verte. Pasa todo el tiempo. Con tu propia web, vos controlás el mensaje, el diseño y la estrategia. No dependés de ninguna plataforma que puede limitarte o desaparecer tus publicaciones de un día para el otro. Tu sitio es tu terreno, y nadie te lo puede sacar.",
+          text: "Imaginá que mañana cambia el algoritmo y tus clientes dejan de verte. Pasa todo el tiempo. Con tu propia web, vos controlás el mensaje, el diseño y la estrategia. No dependés de ninguna plataforma que puede limitarte o desaparecer tus publicaciones de un día para el otro. Tu sitio es tu terreno, y nadie te lo puede sacar.",
         },
         {
           title: "Profesionalismo y confianza instantánea",
