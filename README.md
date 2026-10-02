@@ -1,6 +1,6 @@
 # Digital Brilliance Hub
 
-Crea desde cero una landing page premium minimal tech para agencia digital, estilo Framer y Readymag: elegante, limpio, profesional con interactividad sutil. Paleta: azul dominante #0077B6 (principal), degradado a #60A5FA (acentos/hover), fondos blanco #FFFFFF o gris claro #F8FAFC (70-80% página), textos #0F172A, acento teal/cyan sutil #0EA5E9 para CTAs y highlights (nada monótono, mucho contraste y aire).
+Landing page premium minimal tech para agencia digital, estilo Framer y Readymag: elegante, limpio, profesional con interactividad sutil. Paleta: azul dominante #0077B6 (principal), degradado a #60A5FA (acentos/hover), fondos blanco #FFFFFF o gris claro #F8FAFC (70-80% página), textos #0F172A, acento teal/cyan sutil #0EA5E9 para CTAs y highlights (nada monótono, mucho contraste y aire).
 
 Tipografía: sans-serif clean bold (Inter o Manrope), headings grandes refinados. Animaciones: scroll reveal fade-in/slide-up suave (Framer Motion style), hover glow/lift en cards y botones, micro-interacciones (mouse-follow sutil en hero waves si posible). Responsive 100% móvil primero.
 
